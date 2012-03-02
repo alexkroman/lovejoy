@@ -1,9 +1,12 @@
 
 name = Lovejoy
-description = Minimalist
-base them = 'bartik'
-version = VERSION
+description = Minimalism
 core = 7.x
+base theme = bartik
+engine = phptemplate
+
+stylesheets[all][] = css/lovejoy.css
+
 
 regions[header] = Header
 regions[help] = Help
@@ -27,10 +30,3 @@ regions[footer_fourthcolumn] = Footer fourth column
 regions[footer] = Footer
 
 settings[shortcut_module_link] = 0
-
-
-; Information added by drupal.org packaging script on 2012-02-01
-version = "7.12"
-project = "drupal"
-datestamp = "1328134560"
-
