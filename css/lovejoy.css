@@ -1,3 +1,26 @@
-#content-top {
-	background-color: #777;
+.region-branding {
+	font-size: 13px;
+}
+
+.region-branding a {
+	color: #fff;
+}
+
+.region-branding ul.clearfix {
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.region-branding li {
+	float: left;
+}
+
+.region-branding li.leaf {
+	list-style-type: none;
+	list-style-image: none;
+	margin-right: 5px;
+}
+
+#branding {
+	padding-left: 20px;
 }

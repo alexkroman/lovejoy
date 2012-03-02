@@ -7,28 +7,40 @@ engine = phptemplate
 
 stylesheets[all][] = css/lovejoy.css
 
+; Lovejoy Regions
+
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[content] = Content
 
-regions[content_top] = Content top
+regions[footer_first] = Footer First
+regions[footer_second] = Footer Second
 
+regions[header_first] = Header First
+regions[header_second] = Header Second
 
-regions[header] = Header
-regions[help] = Help
-regions[highlighted] = Highlighted
-regions[featured] = Featured
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
-regions[triptych_first] = Triptych first
-regions[triptych_middle] = Triptych middle
-regions[triptych_last] = Triptych last
+regions[preface_first] = Preface First
+regions[preface_second] = Preface Second
+regions[preface_third] = Preface Third
 
-regions[footer_firstcolumn] = Footer first column
-regions[footer_secondcolumn] = Footer second column
-regions[footer_thirdcolumn] = Footer third column
-regions[footer_fourthcolumn] = Footer fourth column
-regions[footer] = Footer
+regions[postscript_first] = Postscript First
+regions[postscript_second] = Postscript Second
+regions[postscript_third] = Postscript Third
+regions[postscript_fourth] = Postscript Fourth
 
-settings[shortcut_module_link] = 0
+regions[branding] = Branding
+
+regions[user_first] = User Bar First
+regions[user_second] = User Bar Second
+
+; Bartik Regions (should remove)
+
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+
+
+
