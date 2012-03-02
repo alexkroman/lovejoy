@@ -1,26 +1,35 @@
-.region-branding {
+.region-branding, .region-user-first, .region-user-second {
 	font-size: 13px;
 }
 
-.region-branding a {
+.region-branding a, .region-user-first a, .region-user-second a, .region-branding, .region-user-first, .region-user-second, .region-header-first, .region-header-second {
 	color: #fff;
 }
 
-.region-branding ul.clearfix {
+.region-branding h2, .region-user-first h2, .region-user-second h2, .region-header-first h2, .region-header-second h2 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.region-branding ul.clearfix, .region-user-first ul.clearfix, .region-user-second ul.clearfix{
 	padding: 0;
 	margin-bottom: 15px;
 }
 
-.region-branding li {
+.region-branding li, .region-user-first li, .region-user-second li {
 	float: left;
 }
 
-.region-branding li.leaf {
+.region-branding li.leaf, .region-user-first li.leaf, .region-user-second li.leaf  {
 	list-style-type: none;
 	list-style-image: none;
 	margin-right: 5px;
 }
 
-#branding {
+#branding, #header-first, #header-second {
+	padding-left: 20px;
+}
+
+.region-user-first, .region-user-second  {
 	padding-left: 20px;
 }

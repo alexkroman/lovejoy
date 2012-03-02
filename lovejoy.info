@@ -9,32 +9,24 @@ stylesheets[all][] = css/lovejoy.css
 
 ; Lovejoy Regions
 
-regions[page_top] = Page top
-regions[page_bottom] = Page bottom
 regions[content] = Content
-
-regions[footer_first] = Footer First
-regions[footer_second] = Footer Second
-
-regions[header_first] = Header First
-regions[header_second] = Header Second
-
+regions[user_first] = User Bar First
+regions[user_second] = User Bar Second
+regions[branding] = Branding
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
-
+regions[header_first] = Header First
+regions[header_second] = Header Second
 regions[preface_first] = Preface First
 regions[preface_second] = Preface Second
 regions[preface_third] = Preface Third
-
 regions[postscript_first] = Postscript First
 regions[postscript_second] = Postscript Second
 regions[postscript_third] = Postscript Third
 regions[postscript_fourth] = Postscript Fourth
+regions[footer_first] = Footer First
+regions[footer_second] = Footer Second
 
-regions[branding] = Branding
-
-regions[user_first] = User Bar First
-regions[user_second] = User Bar Second
 
 ; Bartik Regions (should remove)
 

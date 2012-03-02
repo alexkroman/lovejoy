@@ -85,8 +85,6 @@
  */
 ?>
 <div id="page-wrapper"><div id="page">
-  <div id="user-first"><?php print render($page['user_first']); ?></div>
-  <div id="user-second"><?php print render($page['user_second']); ?></div>
 
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
 
@@ -121,14 +119,23 @@
 
       </div> <!-- /#name-and-slogan -->
     <?php endif; ?>
-
-    <?php print render($page['header_first']); ?>
-    <?php print render($page['header_second']); ?>
-
+  
     <?php if ($main_menu): ?>
-      <div id="main-menu" class="navigation">	
+      <div id="main-menu" class="navigation">
 		<?php if ($page['branding']): ?>
 		   <div id="branding"><?php print render($page['branding']); ?></div>
+		<?php endif; ?>	
+		<?php if ($page['user_first']): ?>
+	  		<div id="user-first"><?php print render($page['user_first']); ?></div>
+	  	<? endif; ?>
+	  	<?php if ($page['user_second']): ?>
+	  		<div id="user-second"><?php print render($page['user_second']); ?></div>
+	  	<? endif; ?>
+		<?php if ($page['header_first']): ?>
+	  		<div id="header-first"><?php print render($page['header_first']); ?></div>
+		<?php endif; ?>
+		<?php if ($page['header_second']): ?>
+	  		<div id="header-second"><?php print render($page['header_second']); ?></div>
 		<?php endif; ?>
         <?php print theme('links__system_main_menu', array(
           'links' => $main_menu,
@@ -176,6 +183,14 @@
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
+	<?php if ($page['preface_first'] || $page['preface_second'] || $page['preface_third']): ?>
+	  <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+	    <?php print render($page['preface_first']); ?>
+	    <?php print render($page['preface_second']); ?>
+	    <?php print render($page['preface_third']); ?>
+	  </div></div> <!-- /#triptych, /#triptych-wrapper -->
+	<?php endif; ?>
+	
     <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="column sidebar"><div class="section">
         <?php print render($page['sidebar_first']); ?>
@@ -215,14 +230,6 @@
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
-
-  <?php if ($page['preface_first'] || $page['preface_second'] || $page['preface_third']): ?>
-    <div id="triptych-wrapper"><div id="triptych" class="clearfix">
-      <?php print render($page['preface_first']); ?>
-      <?php print render($page['preface_second']); ?>
-      <?php print render($page['preface_third']); ?>
-    </div></div> <!-- /#triptych, /#triptych-wrapper -->
-  <?php endif; ?>
 
   <div id="footer-wrapper"><div class="section">
 
