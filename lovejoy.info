@@ -8,7 +8,6 @@ engine = phptemplate
 stylesheets[all][] = css/lovejoy.css
 
 ; Lovejoy Regions
-
 regions[content] = Content
 regions[user_first] = User Bar First
 regions[user_second] = User Bar Second
@@ -27,9 +26,7 @@ regions[postscript_fourth] = Postscript Fourth
 regions[footer_first] = Footer First
 regions[footer_second] = Footer Second
 
-
-; Bartik Regions (should remove)
-
+; Bartik only regions
 regions[help] = Help
 regions[highlighted] = Highlighted
 
